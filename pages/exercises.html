@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+        CoreZen | Exercise Library
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="../css/exercises.css"
+    />
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h1>CoreZen</h1>
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="exercises.html">
+                        Exercises
+                    </a>
+                </li>
+
+                <li>
+                    <a href="anatomy.html">
+                        Anatomy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="yoga.html">
+                        Yoga
+                    </a>
+                </li>
+
+                <li>
+                    <a href="planner.html">
+                        Planner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="diet.html">
+                        Diet
+                    </a>
+                </li>
+
+                <li>
+                    <a href="machines.html">
+                        Machines
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="exercise-hero">
+
+        <div class="exercise-hero-overlay"></div>
+
+        <div class="exercise-hero-content">
+
+            <h2>
+                Exercise Library
+            </h2>
+
+            <p>
+                Learn exercises for every muscle group
+                with detailed guidance, benefits,
+                mistakes, and training insights.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         SEARCH & FILTERS
+    ========================== -->
+
+    <section class="exercise-controls">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="exerciseSearch"
+                placeholder="Search exercises..."
+            />
+
+        </div>
+
+        <div class="filter-box">
+
+            <select id="difficultyFilter">
+
+                <option value="all">
+                    All Difficulty Levels
+                </option>
+
+                <option value="Beginner">
+                    Beginner
+                </option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         MUSCLE GROUPS
+    ========================== -->
+
+    <section class="muscle-groups">
+
+        <h2 class="section-title">
+            Choose a Muscle Group
+        </h2>
+
+        <div class="muscle-grid">
+
+            <!-- CHEST -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Chest"
+            >
+
+                <img
+                    src="../images/exercises/chest/chest-cover.jpg"
+                    alt="Chest Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Chest
+                    </h3>
+
+                    <p>
+                        Build upper body strength and chest power.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BACK -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Back"
+            >
+
+                <img
+                    src="../images/exercises/back/back-cover.jpg"
+                    alt="Back Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Back
+                    </h3>
+
+                    <p>
+                        Improve posture, pulling strength, and stability.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- SHOULDERS -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Shoulders"
+            >
+
+                <img
+                    src="../images/exercises/shoulders/shoulders-cover.jpg"
+                    alt="Shoulder Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Shoulders
+                    </h3>
+
+                    <p>
+                        Develop shoulder strength and mobility.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BICEPS -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Biceps"
+            >
+
+                <img
+                    src="../images/exercises/biceps/biceps-cover.jpg"
+                    alt="Biceps Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Biceps
+                    </h3>
+
+                    <p>
+                        Train arm strength and improve pulling power.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- TRICEPS -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Triceps"
+            >
+
+                <img
+                    src="../images/exercises/triceps/triceps-cover.jpg"
+                    alt="Triceps Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Triceps
+                    </h3>
+
+                    <p>
+                        Increase arm size and pressing strength.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- LEGS -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Legs"
+            >
+
+                <img
+                    src="../images/exercises/legs/legs-cover.jpg"
+                    alt="Leg Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Legs
+                    </h3>
+
+                    <p>
+                        Improve balance, power, and lower body strength.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CORE -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Core"
+            >
+
+                <img
+                    src="../images/exercises/core/core-cover.jpg"
+                    alt="Core Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Core
+                    </h3>
+
+                    <p>
+                        Strengthen abs, posture, and body stability.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FULL BODY -->
+
+            <div
+                class="muscle-card"
+                data-muscle="Full Body"
+            >
+
+                <img
+                    src="../images/exercises/fullbody/fullbody-cover.jpg"
+                    alt="Full Body Exercises"
+                />
+
+                <div class="muscle-card-content">
+
+                    <h3>
+                        Full Body
+                    </h3>
+
+                    <p>
+                        Train multiple muscle groups together efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         EXERCISE DISPLAY SECTION
+    ========================== -->
+
+    <section class="exercise-display">
+
+        <div class="exercise-header">
+
+            <h2 id="selectedMuscleTitle">
+                Select a Muscle Group
+            </h2>
+
+            <p id="selectedMuscleDescription">
+                Choose a category above to explore exercises.
+            </p>
+
+        </div>
+
+        <!-- EXERCISE GRID -->
+
+        <div
+            class="exercise-grid"
+            id="exerciseGrid"
+        >
+
+            <!-- Dynamic exercise cards will appear here -->
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         EXERCISE DETAILS MODAL
+    ========================== -->
+
+    <div
+        class="exercise-modal"
+        id="exerciseModal"
+    >
+
+        <div class="exercise-modal-content">
+
+            <!-- CLOSE BUTTON -->
+
+            <span
+                class="close-modal"
+                id="closeModal"
+            >
+                &times;
+            </span>
+
+            <!-- MODAL BODY -->
+
+            <div id="modalBody">
+
+                <!-- Dynamic content from JS -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 CoreZen. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../script.js"></script>
+
+    <script src="../js/exercises.js"></script>
+
+</body>
+</html>

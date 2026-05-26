@@ -1,0 +1,1020 @@
+{
+  "websiteInfo": {
+    "name": "CoreZen",
+    "tagline": "Strong Body. Calm Mind.",
+    "version": "1.0.0",
+    "description": "CoreZen is an all-in-one fitness, yoga, anatomy, diet, and wellness platform."
+  },
+
+  "homepageCards": [
+    {
+      "id": 1,
+      "title": "Exercise Library",
+      "description": "Learn exercises for every muscle group with proper form, mistakes, and difficulty levels.",
+      "image": "images/homepage/cards/exercise-card.png",
+      "link": "pages/exercises.html"
+    },
+
+    {
+      "id": 2,
+      "title": "Anatomy Explorer",
+      "description": "Discover muscles interactively and understand how your body works.",
+      "image": "images/homepage/cards/anatomy-card.png",
+      "link": "pages/anatomy.html"
+    },
+
+    {
+      "id": 3,
+      "title": "Yoga Section",
+      "description": "Practice yoga poses, breathing techniques, flexibility training, and mindfulness.",
+      "image": "images/homepage/cards/yoga-card.png",
+      "link": "pages/yoga.html"
+    },
+
+    {
+      "id": 4,
+      "title": "Workout Planner",
+      "description": "Generate workout routines based on your goals, time, and schedule.",
+      "image": "images/homepage/cards/planner-card.png",
+      "link": "pages/planner.html"
+    },
+
+    {
+      "id": 5,
+      "title": "Diet Guide",
+      "description": "Explore healthy nutrition, vegetarian protein sources, and meal planning.",
+      "image": "images/homepage/cards/diet-card.png",
+      "link": "pages/diet.html"
+    },
+
+    {
+      "id": 6,
+      "title": "Gym Machine Guide",
+      "description": "Understand gym machines, target muscles, safety, and correct usage.",
+      "image": "images/homepage/cards/machines-card.png",
+      "link": "pages/machines.html"
+    }
+  ],
+
+  "exerciseCategories": [
+    {
+      "name": "Chest",
+      "imageFolder": "images/exercises/chest/",
+      "exercises": [
+  {
+    "name": "Push-Up",
+
+    "difficulty": "Beginner",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "pushup.mp4",
+
+    "steps": [
+      "Start in a plank position",
+      "Keep body straight",
+      "Lower chest slowly",
+      "Push back upward"
+    ],
+
+    "benefits": [
+      "Builds chest strength",
+      "Improves upper body endurance",
+      "Strengthens shoulders and triceps"
+    ],
+
+    "mistakes": [
+      "Sagging hips",
+      "Elbows too wide",
+      "Rushing repetitions"
+    ],
+
+    "tips": [
+      "Keep core tight",
+      "Control movement slowly",
+      "Exhale while pushing upward"
+    ]
+  },
+
+  {
+    "name": "Wall Push-Up",
+
+    "difficulty": "Beginner",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "wall-pushup.mp4",
+
+    "steps": [
+      "Stand facing a wall",
+      "Place hands shoulder-width apart on the wall",
+      "Lean body toward the wall slowly",
+      "Push back to starting position"
+    ],
+
+    "benefits": [
+      "Great for beginners",
+      "Builds upper body strength",
+      "Improves push-up technique"
+    ],
+
+    "mistakes": [
+      "Standing too close to the wall",
+      "Arching the back",
+      "Moving too quickly"
+    ],
+
+    "tips": [
+      "Keep body straight",
+      "Move in a controlled motion",
+      "Engage chest muscles while pushing"
+    ]
+  },
+
+  {
+    "name": "Incline Push-Up",
+
+    "difficulty": "Beginner",
+
+    "equipment": "Bench",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "incline-pushup.mp4",
+
+    "steps": [
+      "Place hands on a bench or elevated surface",
+      "Keep body in a straight line",
+      "Lower chest toward the surface",
+      "Push back to starting position"
+    ],
+
+    "benefits": [
+      "Easier than standard push-ups",
+      "Improves chest activation",
+      "Builds upper body endurance"
+    ],
+
+    "mistakes": [
+      "Sagging hips",
+      "Partial range of motion",
+      "Flaring elbows too much"
+    ],
+
+    "tips": [
+      "Use a stable surface",
+      "Control the movement",
+      "Keep elbows slightly tucked"
+    ]
+  },
+
+  {
+    "name": "Chest Squeeze Press",
+
+    "difficulty": "Beginner",
+
+    "equipment": "Dumbbells",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "chest-squeeze-press.mp4",
+
+    "steps": [
+      "Hold dumbbells together at chest level",
+      "Press dumbbells upward while squeezing them together",
+      "Lower slowly with control",
+      "Repeat movement steadily"
+    ],
+
+    "benefits": [
+      "Improves chest muscle contraction",
+      "Builds pressing strength",
+      "Enhances mind-muscle connection"
+    ],
+
+    "mistakes": [
+      "Not squeezing dumbbells together",
+      "Moving too fast",
+      "Poor wrist positioning"
+    ],
+
+    "tips": [
+      "Maintain constant tension",
+      "Move slowly for better chest activation",
+      "Focus on squeezing the chest"
+    ]
+  },
+
+  {
+    "name": "Dumbbell Floor Fly",
+
+    "difficulty": "Beginner",
+
+    "equipment": "Dumbbells",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+
+    "video": "dumbbell-floor-fly.mp4",
+
+    "steps": [
+      "Lie flat on the floor holding dumbbells",
+      "Extend arms above chest",
+      "Slowly lower arms outward",
+      "Bring dumbbells back together"
+    ],
+
+    "benefits": [
+      "Improves chest flexibility",
+      "Strengthens chest muscles",
+      "Safer than bench fly variations"
+    ],
+
+    "mistakes": [
+      "Using excessive weight",
+      "Lowering too quickly",
+      "Bending elbows excessively"
+    ],
+
+    "tips": [
+      "Move slowly and steadily",
+      "Use light dumbbells initially",
+      "Focus on chest stretch"
+    ]
+  },
+
+  {
+    "name": "Seated Chest Press Machine",
+
+    "difficulty": "Beginner",
+
+    "equipment": "Chest Press Machine",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "seated-chest-press-machine.mp4",
+
+    "steps": [
+      "Adjust seat height properly",
+      "Grip handles firmly",
+      "Push handles forward fully",
+      "Return slowly to starting position"
+    ],
+
+    "benefits": [
+      "Safe for beginners",
+      "Improves chest strength",
+      "Provides controlled movement"
+    ],
+
+    "mistakes": [
+      "Using too much weight",
+      "Locking elbows",
+      "Poor posture during movement"
+    ],
+
+    "tips": [
+      "Keep chest lifted",
+      "Control the return movement",
+      "Avoid jerky motions"
+    ]
+  },
+
+  {
+    "name": "Bench Press",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "Barbell",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "bench-press.mp4",
+
+    "steps": [
+      "Lie flat on the bench",
+      "Grip the bar slightly wider than shoulder-width",
+      "Lower bar slowly to chest level",
+      "Press the bar upward until arms extend"
+    ],
+
+    "benefits": [
+      "Builds chest strength",
+      "Improves upper body power",
+      "Strengthens shoulders and triceps"
+    ],
+
+    "mistakes": [
+      "Bouncing bar off chest",
+      "Using excessive weight",
+      "Poor grip positioning"
+    ],
+
+    "tips": [
+      "Keep feet planted firmly",
+      "Control the lowering phase",
+      "Avoid locking elbows aggressively"
+    ]
+  },
+
+  {
+    "name": "Dumbbell Bench Press",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "Dumbbells",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "dumbbell-bench-press.mp4",
+
+    "steps": [
+      "Lie on a flat bench holding dumbbells",
+      "Position dumbbells beside chest",
+      "Press dumbbells upward together",
+      "Lower slowly with control"
+    ],
+
+    "benefits": [
+      "Improves chest balance",
+      "Enhances stabilizer muscles",
+      "Increases upper body strength"
+    ],
+
+    "mistakes": [
+      "Dropping dumbbells too quickly",
+      "Uneven arm movement",
+      "Using too much weight"
+    ],
+
+    "tips": [
+      "Keep wrists neutral",
+      "Move evenly with both arms",
+      "Focus on controlled motion"
+    ]
+  },
+
+  {
+    "name": "Cable Chest Fly",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "Cable Machine",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+
+    "video": "cable-chest-fly.mp4",
+
+    "steps": [
+      "Set pulleys to chest height",
+      "Grab handles and step forward",
+      "Bring hands together in front of chest",
+      "Return slowly to starting position"
+    ],
+
+    "benefits": [
+      "Improves chest definition",
+      "Maintains constant muscle tension",
+      "Enhances chest flexibility"
+    ],
+
+    "mistakes": [
+      "Using excessive weight",
+      "Moving too quickly",
+      "Overextending shoulders"
+    ],
+
+    "tips": [
+      "Keep slight bend in elbows",
+      "Move slowly and steadily",
+      "Focus on chest contraction"
+    ]
+  },
+
+  {
+    "name": "Cable Crossover",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "Cable Machine",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+
+    "video": "cable-crossover.mp4",
+
+    "steps": [
+      "Adjust cable pulleys above shoulder level",
+      "Grab handles and step forward",
+      "Pull cables downward and inward",
+      "Return slowly with control"
+    ],
+
+    "benefits": [
+      "Improves chest definition",
+      "Builds inner chest activation",
+      "Provides full chest stretch"
+    ],
+
+    "mistakes": [
+      "Using too much weight",
+      "Swinging body excessively",
+      "Poor posture"
+    ],
+
+    "tips": [
+      "Keep chest lifted",
+      "Control both directions of movement",
+      "Avoid jerky motions"
+    ]
+  },
+
+  {
+    "name": "Chest Dips",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "Dip Bars",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+
+    "video": "chest-dips.mp4",
+
+    "steps": [
+      "Grip dip bars firmly",
+      "Lean slightly forward",
+      "Lower body slowly",
+      "Push upward to starting position"
+    ],
+
+    "benefits": [
+      "Builds chest and tricep strength",
+      "Improves upper body endurance",
+      "Enhances pressing power"
+    ],
+
+    "mistakes": [
+      "Staying too upright",
+      "Dropping too quickly",
+      "Partial range of motion"
+    ],
+
+    "tips": [
+      "Lean forward to target chest more",
+      "Control descent slowly",
+      "Keep movement smooth"
+    ]
+  },
+
+  {
+    "name": "Close Grip Push-Up",
+
+    "difficulty": "Intermediate",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Triceps",
+      "Shoulders"
+    ],
+
+    "video": "close-grip-push-up.mp4",
+
+    "steps": [
+      "Place hands closer than shoulder-width",
+      "Keep body straight in plank position",
+      "Lower chest slowly",
+      "Push back upward"
+    ],
+
+    "benefits": [
+      "Strengthens chest and triceps",
+      "Improves arm endurance",
+      "Enhances push-up performance"
+    ],
+
+    "mistakes": [
+      "Hands too close together",
+      "Sagging hips",
+      "Moving too quickly"
+    ],
+
+    "tips": [
+      "Keep elbows close to body",
+      "Engage core throughout movement",
+      "Control the lowering phase"
+    ]
+  },
+
+  {
+    "name": "Archer Push-Up",
+
+    "difficulty": "Advanced",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps",
+      "Core"
+    ],
+
+    "video": "archer-pushup.mp4",
+
+    "steps": [
+      "Start in a wide push-up position",
+      "Shift body weight to one arm",
+      "Lower chest toward one side",
+      "Push back up and alternate sides"
+    ],
+
+    "benefits": [
+      "Builds unilateral chest strength",
+      "Improves push-up control",
+      "Develops upper body stability"
+    ],
+
+    "mistakes": [
+      "Hands placed too close together",
+      "Rushing the movement",
+      "Poor body alignment"
+    ],
+
+    "tips": [
+      "Move slowly for better control",
+      "Keep core engaged",
+      "Maintain steady breathing"
+    ]
+  },
+
+  {
+    "name": "Weighted Push-Up",
+
+    "difficulty": "Advanced",
+
+    "equipment": "Weight Plate",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps",
+      "Core"
+    ],
+
+    "video": "weighted-pushup.mp4",
+
+    "steps": [
+      "Place weight plate securely on upper back",
+      "Start in push-up position",
+      "Lower chest slowly",
+      "Push back upward with control"
+    ],
+
+    "benefits": [
+      "Increases chest strength",
+      "Builds muscle mass",
+      "Improves pushing power"
+    ],
+
+    "mistakes": [
+      "Using excessive weight",
+      "Poor body posture",
+      "Dropping too quickly"
+    ],
+
+    "tips": [
+      "Start with lighter weight",
+      "Keep body straight",
+      "Use controlled repetitions"
+    ]
+  },
+
+  {
+    "name": "Single Arm Push-Up",
+
+    "difficulty": "Advanced",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps",
+      "Core"
+    ],
+
+    "video": "single-arm-pushup.mp4",
+
+    "steps": [
+      "Place one hand under chest",
+      "Extend feet wider for balance",
+      "Lower body slowly",
+      "Push back upward using one arm"
+    ],
+
+    "benefits": [
+      "Builds exceptional upper body strength",
+      "Improves balance and coordination",
+      "Develops unilateral power"
+    ],
+
+    "mistakes": [
+      "Feet too narrow",
+      "Twisting hips excessively",
+      "Rushing repetitions"
+    ],
+
+    "tips": [
+      "Master regular push-ups first",
+      "Keep core tight",
+      "Move slowly and steadily"
+    ]
+  },
+
+  {
+    "name": "Decline Push-Up",
+
+    "difficulty": "Advanced",
+
+    "equipment": "Bench",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+
+    "video": "decline-pushup.mp4",
+
+    "steps": [
+      "Place feet on an elevated surface",
+      "Position hands shoulder-width apart",
+      "Lower chest slowly",
+      "Push back upward"
+    ],
+
+    "benefits": [
+      "Targets upper chest",
+      "Builds shoulder strength",
+      "Increases push-up intensity"
+    ],
+
+    "mistakes": [
+      "Sagging hips",
+      "Partial range of motion",
+      "Moving too quickly"
+    ],
+
+    "tips": [
+      "Keep body aligned",
+      "Control movement carefully",
+      "Avoid bouncing upward"
+    ]
+  },
+
+  {
+    "name": "Explosive Push-Up",
+
+    "difficulty": "Advanced",
+
+    "equipment": "None",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps",
+      "Core"
+    ],
+
+    "video": "explosive-pushup.mp4",
+
+    "steps": [
+      "Start in push-up position",
+      "Lower body under control",
+      "Push explosively off the floor",
+      "Land softly and repeat"
+    ],
+
+    "benefits": [
+      "Builds explosive upper body power",
+      "Improves athletic performance",
+      "Enhances muscle endurance"
+    ],
+
+    "mistakes": [
+      "Poor landing control",
+      "Incomplete push-off",
+      "Moving too fast without control"
+    ],
+
+    "tips": [
+      "Land softly",
+      "Focus on explosive movement",
+      "Warm up wrists beforehand"
+    ]
+  },
+
+  {
+    "name": "Suspension Trainer Chest Press",
+
+    "difficulty": "Advanced",
+
+    "equipment": "Suspension Trainer",
+
+    "primaryMuscles": [
+      "Chest"
+    ],
+
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps",
+      "Core"
+    ],
+
+    "video": "suspension-trainer-chest-press.mp4",
+
+    "steps": [
+      "Hold suspension trainer handles",
+      "Lean body forward",
+      "Lower chest slowly toward handles",
+      "Push back to starting position"
+    ],
+
+    "benefits": [
+      "Improves stability and balance",
+      "Strengthens chest and core",
+      "Builds functional strength"
+    ],
+
+    "mistakes": [
+      "Poor body alignment",
+      "Moving too quickly",
+      "Not controlling the straps"
+    ],
+
+    "tips": [
+      "Keep core tight",
+      "Move slowly for stability",
+      "Adjust angle for difficulty"
+    ]
+  }
+]
+    },
+
+    {
+      "name": "Back",
+      "imageFolder": "images/exercises/back/",
+      "exercises": [
+        {
+          "name": "Pull-Up",
+          "difficulty": "Intermediate",
+          "equipment": "Pull-Up Bar",
+          "primaryMuscles": ["Lats"],
+          "secondaryMuscles": ["Biceps"],
+          "image": "pullup.png"
+        }
+      ]
+    },
+
+    {
+      "name": "Shoulders",
+      "imageFolder": "images/exercises/shoulders/",
+      "exercises": []
+    },
+
+    {
+      "name": "Biceps",
+      "imageFolder": "images/exercises/biceps/",
+      "exercises": []
+    },
+
+    {
+      "name": "Triceps",
+      "imageFolder": "images/exercises/triceps/",
+      "exercises": []
+    },
+
+    {
+      "name": "Legs",
+      "imageFolder": "images/exercises/legs/",
+      "exercises": []
+    },
+
+    {
+      "name": "Core",
+      "imageFolder": "images/exercises/core/",
+      "exercises": []
+    }
+  ],
+
+  "yogaCategories": [
+    {
+      "category": "Beginner",
+      "folder": "images/yoga/beginner/",
+      "poses": [
+        {
+          "name": "Tadasana",
+          "englishName": "Mountain Pose",
+          "difficulty": "Beginner",
+          "benefits": [
+            "Improves posture",
+            "Enhances balance"
+          ],
+          "image": "tadasana.png"
+        }
+      ]
+    },
+
+    {
+      "category": "Flexibility",
+      "folder": "images/yoga/flexibility/",
+      "poses": []
+    },
+
+    {
+      "category": "Strength",
+      "folder": "images/yoga/strength/",
+      "poses": []
+    },
+
+    {
+      "category": "Balance",
+      "folder": "images/yoga/balance/",
+      "poses": []
+    },
+
+    {
+      "category": "Breathing",
+      "folder": "images/yoga/breathing/",
+      "poses": []
+    }
+  ],
+
+  "anatomy": {
+    "frontBodyImage": "images/anatomy/front-body.png",
+    "backBodyImage": "images/anatomy/back-body.png",
+
+    "muscles": [
+      {
+        "name": "Chest",
+        "bodyPart": "Upper Body",
+        "relatedExercises": [
+          "Push-Up",
+          "Bench Press"
+        ]
+      },
+
+      {
+        "name": "Biceps",
+        "bodyPart": "Arms",
+        "relatedExercises": []
+      },
+
+      {
+        "name": "Quadriceps",
+        "bodyPart": "Legs",
+        "relatedExercises": []
+      }
+    ]
+  },
+
+  "dietGuide": {
+    "categories": [
+      {
+        "type": "Vegetarian Protein Sources",
+        "foods": [
+          "Paneer",
+          "Tofu",
+          "Soy Chunks",
+          "Lentils",
+          "Chickpeas",
+          "Peanuts"
+        ]
+      },
+
+      {
+        "type": "Muscle Gain",
+        "foods": []
+      },
+
+      {
+        "type": "Weight Loss",
+        "foods": []
+      }
+    ]
+  },
+
+  "gymMachines": [
+    {
+      "name": "Leg Press Machine",
+      "primaryMuscles": ["Quadriceps"],
+      "secondaryMuscles": ["Glutes", "Hamstrings"],
+      "difficulty": "Beginner",
+      "image": "images/gym-machines/leg-press.png"
+    },
+
+    {
+      "name": "Lat Pulldown Machine",
+      "primaryMuscles": ["Lats"],
+      "secondaryMuscles": ["Biceps"],
+      "difficulty": "Beginner",
+      "image": "images/gym-machines/lat-pulldown.png"
+    }
+  ]
+}

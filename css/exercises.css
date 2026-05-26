@@ -1,0 +1,853 @@
+/* =========================
+   EXERCISE HERO
+========================= */
+
+.exercise-hero {
+
+    min-height: 65vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding:
+        140px 20px 80px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.78),
+            rgba(15, 23, 42, 0.92)
+        ),
+
+        url("../images/exercises/exercise-hero.jpg")
+        center/cover no-repeat;
+}
+
+.exercise-hero-content {
+
+    max-width: 850px;
+
+    z-index: 2;
+}
+
+.exercise-hero-content h2 {
+
+    font-size: 4rem;
+
+    margin-bottom: 20px;
+
+    font-weight: 800;
+}
+
+.exercise-hero-content p {
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: var(--text-light);
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+/* =========================
+   SEARCH & FILTERS
+========================= */
+
+.exercise-controls {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding:
+        60px 7% 20px;
+}
+
+.search-box {
+
+    flex: 1;
+
+    min-width: 280px;
+
+    max-width: 500px;
+}
+
+.search-box input {
+
+    width: 100%;
+
+    padding:
+        16px 20px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 14px;
+
+    background: var(--card-bg);
+
+    color: white;
+
+    font-size: 1rem;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow:
+        0 0 10px rgba(20, 184, 166, 0.3);
+}
+
+.filter-box select {
+
+    padding:
+        16px 20px;
+
+    border-radius: 14px;
+
+    border: none;
+
+    outline: none;
+
+    background: var(--card-bg);
+
+    color: white;
+
+    font-size: 1rem;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.filter-box select:focus {
+
+    border-color: var(--primary-color);
+}
+
+/* =========================
+   MUSCLE GROUPS
+========================= */
+
+.muscle-groups {
+
+    padding:
+        60px 7%;
+}
+
+.muscle-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+}
+
+/* =========================
+   MUSCLE CARD
+========================= */
+
+.muscle-card {
+
+    background: var(--card-bg);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    border: var(--border);
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow);
+
+    position: relative;
+}
+
+.muscle-card:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.01);
+}
+
+.muscle-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.muscle-card-content {
+
+    padding: 22px;
+}
+
+.muscle-card-content h3 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+}
+
+.muscle-card-content p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    font-size: 0.95rem;
+}
+
+/* =========================
+   EXERCISE DISPLAY SECTION
+========================= */
+
+.exercise-display {
+
+    padding:
+        80px 7% 120px;
+}
+
+.exercise-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.exercise-header h2 {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+.exercise-header p {
+
+    color: var(--text-light);
+
+    font-size: 1.05rem;
+}
+
+/* =========================
+   EXERCISE GRID
+========================= */
+
+.exercise-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 35px;
+}
+
+/* =========================
+   EXERCISE CARD
+========================= */
+
+.exercise-card {
+
+    background: var(--card-bg);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    border: var(--border);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+}
+
+.exercise-card:hover {
+
+    transform:
+        translateY(-10px);
+}
+
+.exercise-card img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.exercise-card-content {
+
+    padding: 24px;
+}
+
+.exercise-card-content h3 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 16px;
+}
+
+.exercise-stats {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+.exercise-stat {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 0.95rem;
+
+    color: var(--text-light);
+}
+
+.exercise-badge {
+
+    display: inline-block;
+
+    padding:
+        6px 12px;
+
+    border-radius: 50px;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.beginner {
+
+    background: rgba(34, 197, 94, 0.15);
+
+    color: #4ade80;
+}
+
+.intermediate {
+
+    background: rgba(234, 179, 8, 0.15);
+
+    color: #facc15;
+}
+
+.advanced {
+
+    background: rgba(239, 68, 68, 0.15);
+
+    color: #f87171;
+}
+
+.exercise-card button {
+
+    width: 100%;
+
+    padding:
+        14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.exercise-card button:hover {
+
+    background: var(--hover-color);
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.exercise-modal {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        rgba(0,0,0,0.75);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 5000;
+}
+
+.exercise-modal-content {
+
+    background: #111c33;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border-radius: 28px;
+
+    position: relative;
+
+    padding: 35px;
+
+    border: var(--border);
+
+    animation:
+        modalOpen 0.35s ease;
+}
+
+/* =========================
+   MODAL ANIMATION
+========================= */
+
+@keyframes modalOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.9)
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-modal {
+
+    position: absolute;
+
+    top: 18px;
+    right: 24px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+
+    color: var(--primary-color);
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.modal-image {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+
+    max-height: 350px;
+
+    object-fit: cover;
+}
+
+/* =========================
+   MODAL CONTENT UPGRADE
+========================= */
+
+.exercise-modal-content {
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+/* Every section card */
+
+.modal-section {
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    margin: 0;
+}
+
+/* Section heading */
+
+.modal-section h3 {
+
+    color: var(--primary-color);
+
+    font-size: 1.55rem;
+
+    margin-bottom: 18px;
+
+    font-weight: 700;
+}
+
+/* Paragraph text */
+
+.modal-section p {
+
+    line-height: 1.9;
+
+    color: var(--text-light);
+
+    margin-bottom: 12px;
+}
+
+/* Lists */
+
+.modal-section ul,
+.modal-section ol {
+
+    padding-left: 28px;
+
+    margin-top: 18px;
+
+    margin-bottom: 0;
+}
+
+/* Ordered list numbers */
+
+.modal-section ol {
+
+    list-style: decimal;
+}
+
+/* Bullet list */
+
+.modal-section ul {
+
+    list-style: disc;
+}
+
+/* List item spacing */
+
+.modal-section li {
+
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+.modal-section li:last-child {
+
+    margin-bottom: 0;
+}
+/* List item */
+
+.modal-section li {
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+/* Title */
+
+.modal-title {
+
+    font-size: 2.4rem;
+
+    margin-bottom: 0;
+}
+
+/* Video spacing */
+
+.modal-video {
+
+    width: 100%;
+
+    max-height: 420px;
+
+    border-radius: 24px;
+
+    object-fit: cover;
+
+    background: black;
+
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    .exercise-hero-content h2 {
+
+        font-size: 3.3rem;
+    }
+
+    .exercise-header h2 {
+
+        font-size: 2.5rem;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .exercise-hero {
+
+        min-height: 55vh;
+
+        padding:
+            140px 20px 60px;
+    }
+
+    .exercise-hero-content h2 {
+
+        font-size: 2.5rem;
+    }
+
+    .exercise-hero-content p {
+
+        font-size: 1rem;
+    }
+
+    .exercise-controls {
+
+        padding:
+            40px 5% 10px;
+    }
+
+    .muscle-groups {
+
+        padding:
+            50px 5%;
+    }
+
+    .exercise-display {
+
+        padding:
+            60px 5% 100px;
+    }
+
+    .exercise-header h2 {
+
+        font-size: 2.1rem;
+    }
+
+    .exercise-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .exercise-modal-content {
+
+        padding: 25px;
+    }
+
+    .modal-title {
+
+        font-size: 2rem;
+    }
+}
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px) {
+
+    .exercise-hero-content h2 {
+
+        font-size: 2rem;
+    }
+
+    .exercise-hero-content p {
+
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+    .muscle-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .muscle-card img {
+
+        height: 200px;
+    }
+
+    .exercise-card img {
+
+        height: 210px;
+    }
+
+    .exercise-card-content {
+
+        padding: 20px;
+    }
+
+    .exercise-card-content h3 {
+
+        font-size: 1.3rem;
+    }
+
+    .exercise-card button {
+
+        padding: 13px;
+    }
+
+    .exercise-modal-content {
+
+        border-radius: 20px;
+
+        padding: 22px;
+    }
+
+    .modal-title {
+
+        font-size: 1.7rem;
+    }
+
+    .modal-section h3 {
+
+        font-size: 1.2rem;
+    }
+}
+
+/* =========================
+   MODAL SPACING FIX
+========================= */
+
+.modal-section {
+
+    margin-bottom: 30px;
+}
+
+.modal-section h3 {
+
+    color: var(--primary-color);
+
+    font-size: 1.6rem;
+
+    margin-bottom: 16px;
+
+    margin-top: 0;
+}
+
+.modal-section p {
+
+    margin-bottom: 12px;
+
+    line-height: 1.8;
+}
+
+.modal-section ul,
+.modal-section ol {
+
+    padding-left: 28px;
+
+    margin-top: 10px;
+
+    margin-bottom: 0;
+}
+
+.modal-section li {
+
+    margin-bottom: 12px;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+/* Last item spacing */
+
+.modal-section li:last-child {
+
+    margin-bottom: 0;
+}
