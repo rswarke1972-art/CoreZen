@@ -169,6 +169,16 @@ body {
     color: var(--primary-color);
 }
 
+.nav-links a.active-link {
+
+    color: var(--primary-color);
+}
+
+.nav-links a.active-link::after {
+
+    width: 100%;
+}
+
 /* =========================
    HERO SECTION
 ========================= */
@@ -479,6 +489,10 @@ footer p {
 .mobile-menu-button {
 
     display: none;
+
+    border: none;
+
+    background: transparent;
 
     font-size: 1.8rem;
 

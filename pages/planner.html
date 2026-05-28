@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreZen | Workout Planner</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/planner.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><h1>CoreZen</h1></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="anatomy.html">Anatomy</a></li>
+                <li><a href="yoga.html">Yoga</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li><a href="machines.html">Machines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="planner-hero">
+        <div class="planner-hero-content">
+            <h2>Workout Planner</h2>
+            <p>Build a focused routine based on your goal, level, and weekly schedule.</p>
+        </div>
+    </section>
+
+    <main class="planner-layout">
+        <form class="planner-form" id="plannerForm">
+            <label>
+                Goal
+                <select id="goalSelect">
+                    <option value="strength">Strength</option>
+                    <option value="muscle">Muscle Gain</option>
+                    <option value="fatloss">Weight Loss</option>
+                    <option value="mobility">Mobility</option>
+                </select>
+            </label>
+
+            <label>
+                Experience
+                <select id="levelSelect">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </label>
+
+            <label>
+                Days per week
+                <input id="daysInput" type="number" min="2" max="6" value="4" />
+            </label>
+
+            <button type="submit">Generate Plan</button>
+        </form>
+
+        <section class="plan-output" id="planOutput" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <p>© 2026 CoreZen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/planner.js"></script>
+</body>
+</html>

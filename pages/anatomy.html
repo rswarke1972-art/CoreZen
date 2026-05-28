@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreZen | Anatomy Explorer</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/anatomy.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><h1>CoreZen</h1></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="anatomy.html">Anatomy</a></li>
+                <li><a href="yoga.html">Yoga</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li><a href="machines.html">Machines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="anatomy-hero">
+        <div class="anatomy-hero-content">
+            <h2>Anatomy Explorer</h2>
+            <p>Understand major muscles, body regions, and the exercises that train them.</p>
+        </div>
+    </section>
+
+    <section class="anatomy-layout">
+        <div class="body-viewer">
+            <div class="body-tabs" role="tablist" aria-label="Body view">
+                <button class="body-tab active" data-view="front" type="button">Front</button>
+                <button class="body-tab" data-view="back" type="button">Back</button>
+            </div>
+
+            <img id="bodyImage" src="../images/anatomy/front-body.png" alt="Front body anatomy view" />
+        </div>
+
+        <div class="muscle-panel">
+            <div class="panel-header">
+                <h2>Muscle Guide</h2>
+                <p>Select a muscle to see its role and related training ideas.</p>
+            </div>
+
+            <div class="muscle-list" id="muscleList"></div>
+
+            <article class="muscle-detail" id="muscleDetail">
+                <span class="detail-label">Selected Muscle</span>
+                <h3>Chest</h3>
+                <p>The chest helps with pushing, pressing, and bringing the arms across the body.</p>
+                <div class="related-list">
+                    <strong>Related exercises:</strong>
+                    <span>Push-Up, Bench Press</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 CoreZen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/anatomy.js"></script>
+</body>
+</html>

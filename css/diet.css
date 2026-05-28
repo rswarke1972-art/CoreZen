@@ -1,0 +1,123 @@
+.diet-hero {
+    min-height: 58vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 140px 20px 70px;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.94)),
+        url("../images/homepage/cards/diet-card.png") center/cover no-repeat;
+}
+
+.diet-hero-content {
+    max-width: 820px;
+}
+
+.diet-hero h2 {
+    font-size: 4rem;
+    margin-bottom: 18px;
+}
+
+.diet-hero p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.diet-layout {
+    display: grid;
+    grid-template-columns: minmax(240px, 320px) 1fr;
+    gap: 34px;
+    padding: 90px 7% 120px;
+}
+
+.diet-tabs,
+.diet-panel {
+    background: var(--card-bg);
+    border: var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.diet-tabs {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+}
+
+.diet-tab {
+    border: var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    background: #111c33;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.diet-tab.active,
+.diet-tab:hover {
+    background: var(--primary-color);
+}
+
+.diet-panel {
+    padding: 32px;
+}
+
+.diet-panel h2 {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+}
+
+.diet-panel p,
+.food-card p,
+.meal-card li {
+    color: var(--text-light);
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.food-card,
+.meal-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: var(--border);
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.food-card strong,
+.meal-card h3 {
+    color: var(--primary-color);
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.meal-card ul {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+    .diet-layout {
+        grid-template-columns: 1fr;
+        padding: 70px 5% 100px;
+    }
+
+    .diet-hero h2 {
+        font-size: 2.7rem;
+    }
+}

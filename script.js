@@ -2,75 +2,81 @@
    COREZEN MAIN SCRIPT
 ========================= */
 
-console.log("CoreZen Loaded Successfully");
+const navbar = document.querySelector(".navbar");
+const navLinks = document.querySelectorAll(".nav-links a");
+const featureCards = document.querySelectorAll(".feature-card");
+const heroButton = document.querySelector(".hero-btn");
 
 /* =========================
    NAVBAR SCROLL EFFECT
 ========================= */
 
-const navbar = document.querySelector(".navbar");
+if (navbar) {
+    window.addEventListener("scroll", () => {
 
-window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.style.background = "rgba(15, 23, 42, 0.98)";
+            navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
+        }
 
-    if (window.scrollY > 50) {
-        navbar.style.background = "rgba(15, 23, 42, 0.98)";
-        navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
-    }
+        else {
+            navbar.style.background = "rgba(15, 23, 42, 0.95)";
+            navbar.style.boxShadow = "none";
+        }
 
-    else {
-        navbar.style.background = "rgba(15, 23, 42, 0.95)";
-        navbar.style.boxShadow = "none";
-    }
-
-});
+    });
+}
 
 /* =========================
    FEATURE CARD ANIMATION
 ========================= */
 
-const featureCards = document.querySelectorAll(".feature-card");
+if (featureCards.length > 0) {
 
-const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
 
-    entries.forEach((entry) => {
+        entries.forEach((entry) => {
 
-        if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show-card");
+            }
 
-            entry.target.classList.add("show-card");
+        });
 
-        }
-
+    }, {
+        threshold: 0.15
     });
 
-}, {
-    threshold: 0.15
-});
+    featureCards.forEach((card) => {
 
-featureCards.forEach((card) => {
+        card.classList.add("hidden-card");
+        observer.observe(card);
 
-    card.classList.add("hidden-card");
-
-    observer.observe(card);
-
-});
+    });
+}
 
 /* =========================
    HERO BUTTON SMOOTH SCROLL
 ========================= */
 
-const heroButton = document.querySelector(".hero-btn");
+if (heroButton) {
 
-heroButton.addEventListener("click", (event) => {
+    heroButton.addEventListener("click", (event) => {
 
-    event.preventDefault();
+        const targetSection = document.querySelector("#features");
 
-    const targetSection = document.querySelector("#features");
+        if (!targetSection) {
+            return;
+        }
 
-    targetSection.scrollIntoView({
-        behavior: "smooth"
+        event.preventDefault();
+
+        targetSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
     });
-
-});
+}
 
 /* =========================
    FEATURE CARD HOVER GLOW
@@ -96,19 +102,21 @@ featureCards.forEach((card) => {
    ACTIVE NAV LINK
 ========================= */
 
-const navLinks = document.querySelectorAll(".nav-links a");
+const currentPage =
+    window.location.pathname.split("/").pop()
+    ||
+    "index.html";
 
 navLinks.forEach((link) => {
 
-    link.addEventListener("click", () => {
+    const linkPage =
+        link.getAttribute("href")
+        .split("/")
+        .pop();
 
-        navLinks.forEach((nav) => {
-            nav.classList.remove("active-link");
-        });
-
+    if (linkPage === currentPage) {
         link.classList.add("active-link");
-
-    });
+    }
 
 });
 
@@ -123,75 +131,60 @@ window.addEventListener("load", () => {
 });
 
 /* =========================
-   TEMPORARY FEATURE ALERTS
-========================= */
-
-const featureButtons = document.querySelectorAll(".feature-card a");
-
-featureButtons.forEach((button) => {
-
-    button.addEventListener("click", () => {
-
-        console.log("Opening Feature Page...");
-
-    });
-
-});
-
-/* =========================
-   FUTURE DATA.JSON SUPPORT
+   DATA SUPPORT
 ========================= */
 
 async function loadCoreZenData() {
 
     try {
 
-        const response = await fetch("data.json");
+        const dataPath =
+            window.location.pathname.includes("/pages/")
+            ? "../data.json"
+            : "data.json";
+
+        const response = await fetch(dataPath);
 
         if (!response.ok) {
             throw new Error("Failed to load data.json");
         }
 
-        const data = await response.json();
-
-        console.log("CoreZen Data Loaded:", data);
+        return await response.json();
 
     }
 
     catch (error) {
 
-        console.error("Error Loading Data:", error);
+        return null;
 
     }
 
 }
 
-loadCoreZenData();
+window.coreZenDataPromise = loadCoreZenData();
 
 /* =========================
    MOBILE NAV TOGGLE
 ========================= */
 
-const mobileMenuButton = document.createElement("div");
+if (navbar) {
 
-mobileMenuButton.classList.add("mobile-menu-button");
+    const mobileMenuButton = document.createElement("button");
 
-mobileMenuButton.innerHTML = "☰";
+    mobileMenuButton.classList.add("mobile-menu-button");
+    mobileMenuButton.type = "button";
+    mobileMenuButton.textContent = "☰";
+    mobileMenuButton.setAttribute("aria-label", "Toggle navigation menu");
 
-document.querySelector(".navbar").appendChild(mobileMenuButton);
+    navbar.appendChild(mobileMenuButton);
 
-mobileMenuButton.addEventListener("click", () => {
+    mobileMenuButton.addEventListener("click", () => {
 
-    document.querySelector(".nav-links").classList.toggle("mobile-active");
+        const links = document.querySelector(".nav-links");
 
-});
+        if (links) {
+            links.classList.toggle("mobile-active");
+        }
 
-/* =========================
-   SIMPLE WELCOME MESSAGE
-========================= */
-
-setTimeout(() => {
-
-    console.log("Welcome to CoreZen 💪🧘");
-
-}, 1000);
+    });
+}
